@@ -13,7 +13,13 @@ body {
     background-size: 600% 600%;
     animation: fundoAnimado 10s ease infinite;
     color: white;
-    overflow: hidden;
+
+    overflow-x: hidden; /* permite scroll vertical */
+    overflow-y: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 @keyframes fundoAnimado {
@@ -32,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 10;
 }
 
 #entrada::before {
@@ -149,6 +156,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 20;
 }
 
 /* CORAÇÕES */
@@ -270,6 +278,7 @@ nao.style.top=Math.random()*80+"vh";
 
 const inicio=new Date("2026-04-14T09:37:00");
 
+// CONTADOR DIAS
 setInterval(()=>{
 const agora=new Date();
 const diff=agora-inicio;
@@ -320,4 +329,4 @@ setTimeout(()=>c.remove(),5000);
 </script>
 
 </body>
-  </html>
+</html>
