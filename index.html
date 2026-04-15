@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosso Amor 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(270deg, #000, #1a0005, #000);
+    background-size: 600% 600%;
+    animation: fundoAnimado 10s ease infinite;
+    color: white;
+    overflow: hidden;
+}
+
+@keyframes fundoAnimado {
+    0% {background-position:0% 50%}
+    50% {background-position:100% 50%}
+    100% {background-position:0% 50%}
+}
+
+/* ENTRADA */
+#entrada {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.postimg.cc/tCty6V1z/file-00000000750071f5b297cd2bb8f0a5aa.png') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#entrada::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+#entrada h2, #entrada button {
+    position: relative;
+    z-index: 1;
+}
+
+#entrada button {
+    padding: 20px 40px;
+    font-size: 20px;
+    border-radius: 12px;
+    background: #ff2e4d;
+    color: white;
+    border: none;
+}
+
+/* SITE */
+.container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 32px;
+    text-shadow: 0 0 10px #ff4d6d;
+}
+
+/* BOX TEMPO */
+.tempo-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    background: #111;
+    border: 2px solid #ff2e4d;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.box span {
+    font-size: 22px;
+}
+
+/* CONTADOR BONITO */
+.contador-romantico {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: radial-gradient(circle, #2a0005, #000);
+    box-shadow: 0 0 20px #ff2e4d;
+}
+
+.contador-romantico h2 {
+    font-family: cursive;
+    color: #ff6a88;
+}
+
+.contador-romantico h1 {
+    font-size: 45px;
+}
+
+/* SLIDER */
+.slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    min-width: 250px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* TEXTO */
+.texto {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* BOTÃO */
+.botao-final {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #ff2e4d;
+    border: none;
+    color: white;
+}
+
+/* FINAL */
+#final {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* CORAÇÕES */
+.coracao {
+    position: fixed;
+    top: -10px;
+    animation: cair linear infinite;
+}
+
+@keyframes cair {
+    to { transform: translateY(110vh); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MÚSICA -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/Rmiq3v0bwks?autoplay=1&loop=1&playlist=Rmiq3v0bwks">
+</iframe>
+
+<!-- ENTRADA -->
+<div id="entrada">
+<h2>Tenho uma surpresa 💌</h2>
+<button onclick="entrar()">Entrar ❤️</button>
+</div>
+
+<!-- SITE -->
+<div class="container" id="site">
+
+<h1>Adrian & Clara Celeste Alves Domingos 💖</h1>
+
+<p>Desde 14/04/2026 às 09:37</p>
+
+<!-- SLIDER -->
+<div class="slider">
+
+<div class="card">
+<img src="https://i.postimg.cc/tCty6V1z/file-00000000750071f5b297cd2bb8f0a5aa.png">
+</div>
+
+<div class="card">
+<img src="https://i.postimg.cc/90P0gmbZ/file-0000000053d871f5a0b90a37eccf2a61.png">
+</div>
+
+<div class="card">
+<img src="https://i.postimg.cc/1t9hjc3S/file-00000000836c71f595546c3942a84d82.png">
+</div>
+
+</div>
+
+<!-- DECLARAÇÃO -->
+<div class="texto">
+Tudo começou pela internet 💻💖<br><br>
+Você entrou na minha vida e mudou tudo…<br>
+Hoje você é meu mundo, minha paz e minha felicidade 💘<br><br>
+
+Cada conversa, cada risada, cada momento contigo<br>
+faz meu coração bater mais forte ❤️<br><br>
+
+Eu agradeço todos os dias por ter você na minha vida,<br>
+porque com você tudo é mais bonito ✨<br><br>
+
+Eu te amo mais do que tudo nesse mundo 💍❤️
+</div>
+
+<!-- TEMPO DETALHADO -->
+<h2>Tempo Juntos 💘</h2>
+
+<div class="tempo-box">
+<div class="box"><span id="anos">0</span><p>ANOS</p></div>
+<div class="box"><span id="meses">0</span><p>MESES</p></div>
+<div class="box"><span id="dias">0</span><p>DIAS</p></div>
+<div class="box"><span id="horas">0</span><p>HORAS</p></div>
+<div class="box"><span id="minutos">0</span><p>MIN</p></div>
+<div class="box"><span id="segundos">0</span><p>SEG</p></div>
+</div>
+
+<!-- CONTADOR BONITO -->
+<div class="contador-romantico">
+<h2>Sendo Feliz</h2>
+<h1 id="diasJuntos">0 dias</h1>
+<p>ao seu lado ❤️</p>
+</div>
+
+<button class="botao-final" onclick="irFinal()">Clique aqui ❤️</button>
+
+</div>
+
+<!-- FINAL -->
+<div id="final">
+<h2>Quer namorar comigo? 💍❤️</h2>
+<button onclick="sim()">SIM 💖</button>
+<button id="nao">NÃO 😢</button>
+</div>
+
+<script>
+function entrar(){
+document.getElementById('entrada').style.display='none';
+document.getElementById('site').style.display='block';
+}
+
+function irFinal(){
+document.getElementById('site').style.display='none';
+document.getElementById('final').style.display='flex';
+}
+
+function sim(){
+alert("Agora você é oficialmente minha 💖");
+}
+
+const nao=document.getElementById("nao");
+nao.onmouseover=()=>{
+nao.style.position="absolute";
+nao.style.left=Math.random()*80+"vw";
+nao.style.top=Math.random()*80+"vh";
+};
+
+const inicio=new Date("2026-04-14T09:37:00");
+
+setInterval(()=>{
+const agora=new Date();
+const diff=agora-inicio;
+
+const dias=Math.floor(diff/86400000);
+
+document.getElementById("diasJuntos").innerText = dias + " dias";
+
+},1000);
+
+// TEMPO DETALHADO
+setInterval(()=>{
+const agora=new Date();
+
+let anos=agora.getFullYear()-inicio.getFullYear();
+let meses=agora.getMonth()-inicio.getMonth();
+let dias=agora.getDate()-inicio.getDate();
+
+let horas=agora.getHours()-inicio.getHours();
+let minutos=agora.getMinutes()-inicio.getMinutes();
+let segundos=agora.getSeconds()-inicio.getSeconds();
+
+if(segundos<0){segundos+=60;minutos--;}
+if(minutos<0){minutos+=60;horas--;}
+if(horas<0){horas+=24;dias--;}
+if(dias<0){meses--;dias+=30;}
+if(meses<0){meses+=12;anos--;}
+
+document.getElementById("anos").innerText=anos;
+document.getElementById("meses").innerText=meses;
+document.getElementById("dias").innerText=dias;
+document.getElementById("horas").innerText=horas;
+document.getElementById("minutos").innerText=minutos;
+document.getElementById("segundos").innerText=segundos;
+
+},1000);
+
+// CORAÇÕES
+setInterval(()=>{
+const c=document.createElement('div');
+c.className='coracao';
+c.innerHTML='❤️';
+c.style.left=Math.random()*100+'vw';
+c.style.animationDuration=(Math.random()*3+2)+'s';
+document.body.appendChild(c);
+setTimeout(()=>c.remove(),5000);
+},300);
+</script>
+
+</body>
+  </html>
