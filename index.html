@@ -13,8 +13,7 @@ body {
     background-size: 600% 600%;
     animation: fundoAnimado 10s ease infinite;
     color: white;
-
-    overflow-x: hidden; /* permite scroll vertical */
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -76,43 +75,6 @@ h1 {
     text-shadow: 0 0 10px #ff4d6d;
 }
 
-/* BOX TEMPO */
-.tempo-box {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.box {
-    background: #111;
-    border: 2px solid #ff2e4d;
-    border-radius: 15px;
-    padding: 10px;
-}
-
-.box span {
-    font-size: 22px;
-}
-
-/* CONTADOR BONITO */
-.contador-romantico {
-    margin-top: 30px;
-    padding: 20px;
-    border-radius: 20px;
-    background: radial-gradient(circle, #2a0005, #000);
-    box-shadow: 0 0 20px #ff2e4d;
-}
-
-.contador-romantico h2 {
-    font-family: cursive;
-    color: #ff6a88;
-}
-
-.contador-romantico h1 {
-    font-size: 45px;
-}
-
 /* SLIDER */
 .slider {
     display: flex;
@@ -133,7 +95,40 @@ h1 {
 /* TEXTO */
 .texto {
     margin-top: 20px;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* TEMPO */
+.tempo-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    background: #111;
+    border: 2px solid #ff2e4d;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.box span {
+    font-size: 22px;
+}
+
+/* CONTADOR */
+.contador-romantico {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 20px;
+    background: radial-gradient(circle, #2a0005, #000);
+    box-shadow: 0 0 20px #ff2e4d;
+}
+
+.contador-romantico h1 {
+    font-size: 45px;
 }
 
 /* BOTÃO */
@@ -174,9 +169,12 @@ h1 {
 
 <body>
 
-<!-- MÚSICA -->
-<iframe width="0" height="0"
-src="https://www.youtube.com/embed/Rmiq3v0bwks?autoplay=1&loop=1&playlist=Rmiq3v0bwks">
+<!-- 🎵 MÚSICA -->
+<iframe id="musica"
+width="0"
+height="0"
+src="https://www.youtube.com/embed/Rmiq3v0bwks?loop=1&playlist=Rmiq3v0bwks"
+allow="autoplay">
 </iframe>
 
 <!-- ENTRADA -->
@@ -194,7 +192,6 @@ src="https://www.youtube.com/embed/Rmiq3v0bwks?autoplay=1&loop=1&playlist=Rmiq3v
 
 <!-- SLIDER -->
 <div class="slider">
-
 <div class="card">
 <img src="https://i.postimg.cc/tCty6V1z/file-00000000750071f5b297cd2bb8f0a5aa.png">
 </div>
@@ -206,25 +203,43 @@ src="https://www.youtube.com/embed/Rmiq3v0bwks?autoplay=1&loop=1&playlist=Rmiq3v
 <div class="card">
 <img src="https://i.postimg.cc/1t9hjc3S/file-00000000836c71f595546c3942a84d82.png">
 </div>
-
 </div>
 
-<!-- DECLARAÇÃO -->
+<!-- 💌 DECLARAÇÃO -->
 <div class="texto">
-Tudo começou pela internet 💻💖<br><br>
-Você entrou na minha vida e mudou tudo…<br>
-Hoje você é meu mundo, minha paz e minha felicidade 💘<br><br>
+Tudo começou de um jeito simples… pela internet 💻💖<br><br>
 
-Cada conversa, cada risada, cada momento contigo<br>
-faz meu coração bater mais forte ❤️<br><br>
+Quem diria que uma conversa ia mudar tudo na minha vida…<br>
+Entre mensagens, risadas e momentos inesperados,<br>
+eu encontrei você… e encontrei algo que nunca senti antes ✨<br><br>
 
-Eu agradeço todos os dias por ter você na minha vida,<br>
-porque com você tudo é mais bonito ✨<br><br>
+Você chegou de repente, sem avisar,<br>
+e quando eu percebi… já não conseguia mais imaginar meus dias sem você 💘<br><br>
 
-Eu te amo mais do que tudo nesse mundo 💍❤️
+Cada mensagem sua ilumina meu dia,<br>
+cada risada sua faz meu coração ficar mais leve,<br>
+e cada momento contigo, mesmo que distante,<br>
+se torna especial e único ❤️<br><br>
+
+Não importa a distância, não importa o tempo…<br>
+porque o que eu sinto por você é verdadeiro,<br>
+é forte, é sincero… é amor de verdade 💍<br><br>
+
+Você é minha paz, minha felicidade,<br>
+minha melhor escolha e meu melhor sentimento 💖<br><br>
+
+Eu agradeço todos os dias por ter te encontrado,<br>
+porque você mudou minha vida de um jeito que ninguém nunca conseguiu ✨<br><br>
+
+E eu prometo… continuar escrevendo essa história com você,<br>
+não só por mensagens,<br>
+mas lado a lado, juntos de verdade ❤️<br><br>
+
+Eu te amo mais do que tudo nesse mundo,<br>
+e só quero você… pra sempre comigo 💘💍
 </div>
 
-<!-- TEMPO DETALHADO -->
+<!-- TEMPO -->
 <h2>Tempo Juntos 💘</h2>
 
 <div class="tempo-box">
@@ -236,7 +251,7 @@ Eu te amo mais do que tudo nesse mundo 💍❤️
 <div class="box"><span id="segundos">0</span><p>SEG</p></div>
 </div>
 
-<!-- CONTADOR BONITO -->
+<!-- CONTADOR -->
 <div class="contador-romantico">
 <h2>Sendo Feliz</h2>
 <h1 id="diasJuntos">0 dias</h1>
@@ -258,6 +273,9 @@ Eu te amo mais do que tudo nesse mundo 💍❤️
 function entrar(){
 document.getElementById('entrada').style.display='none';
 document.getElementById('site').style.display='block';
+
+const player = document.getElementById("musica");
+player.src = "https://www.youtube.com/embed/Rmiq3v0bwks?autoplay=1&loop=1&playlist=Rmiq3v0bwks";
 }
 
 function irFinal(){
@@ -278,18 +296,15 @@ nao.style.top=Math.random()*80+"vh";
 
 const inicio=new Date("2026-04-14T09:37:00");
 
-// CONTADOR DIAS
+// DIAS
 setInterval(()=>{
 const agora=new Date();
 const diff=agora-inicio;
-
 const dias=Math.floor(diff/86400000);
-
 document.getElementById("diasJuntos").innerText = dias + " dias";
-
 },1000);
 
-// TEMPO DETALHADO
+// TEMPO COMPLETO
 setInterval(()=>{
 const agora=new Date();
 
